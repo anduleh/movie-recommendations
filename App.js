@@ -1,37 +1,9 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 import { Icon } from 'react-native-elements';
-
-class Matches extends React.Component {
-    render() {
-        return (
-            <View style={styles.container}>
-        <Text>Matches</Text>
-      </View>
-        );
-    }
-}
-
-class Tournaments extends React.Component {
-    render() {
-        return (
-            <View style={styles.container}>
-        <Text>Tournaments</Text>
-      </View>
-        );
-    }
-}
-
-class Avatar extends React.Component {
-    render() {
-        return (
-            <View style={styles.container}>
-        <Text>Avatar</Text>
-      </View>
-        );
-    }
-}
+import Avatar from './android/app/src/views/Avatar';
+import Matches from './android/app/src/views/Matches';
+import Tournaments from './android/app/src/views/Tournaments';
 
 const TabNavigator = createBottomTabNavigator({
         Home: {
@@ -65,13 +37,5 @@ const TabNavigator = createBottomTabNavigator({
     }
 
 );
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-});
 
 export default createAppContainer(TabNavigator);
