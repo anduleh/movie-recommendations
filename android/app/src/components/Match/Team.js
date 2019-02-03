@@ -7,24 +7,23 @@ const styles = StyleSheet.create({
   },
   teamImg: {
     width: "100%",
-    height: "100%",
-    opacity: 0.4
+    height: "100%"
   },
-  overlayText: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    justifyContent: "center",
-    alignItems: "center"
+  opacity: {
+    opacity: 0.4
   },
   teamText: {
     color: "white",
     textShadowColor: "black",
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 1,
-    fontSize: 17
+    fontSize: 17,
+    textAlign: "center"
+  },
+  centerVH: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
   }
 });
 
@@ -34,14 +33,16 @@ class Team extends React.Component {
       <View style={styles.half}>
         <ImageBackground
           style={styles.teamImg}
+          imageStyle={styles.opacity}
           source={{
             uri:
               "https://vignette.wikia.nocookie.net/draco-csgo/images/a/aa/CLG.png/revision/latest?cb=20160312181136"
           }}
-        />
-        <View style={styles.overlayText}>
-          <Text style={styles.teamText}>CLG</Text>
-        </View>
+        >
+          <View style={styles.centerVH}>
+            <Text style={styles.teamText}>CLG</Text>
+          </View>
+        </ImageBackground>
       </View>
     );
   }
