@@ -7,15 +7,29 @@ import {
 import { Icon } from "react-native-elements";
 import Avatar from "./android/app/src/screens/Avatar";
 import Matches from "./android/app/src/screens/Matches";
-import MatchesDetail from "./android/app/src/screens/MatchesDetail";
 import Tournaments from "./android/app/src/screens/Tournaments";
+import MatchDetail from "./android/app/src/screens/MatchDetail";
+
+import getSlideFromRightTransition from 'react-navigation-slide-from-right-transition';
 
 const MatchesStack = createStackNavigator(
   {
-    Matches: Matches,
-    MatchesDetail: MatchesDetail
+    Matches: {
+      screen: Matches,
+      navigationOptions: {
+        title: "Matches",
+      }
+    },
+    MatchDetail: {
+      screen: MatchDetail,
+      navigationOptions: {
+        title: "Match Details"
+      }
+    }
   },
+
   {
+    transitionConfig: getSlideFromRightTransition,
     initialRouteName: "Matches",
     defaultNavigationOptions: {
       headerStyle: {
@@ -31,7 +45,12 @@ const MatchesStack = createStackNavigator(
 
 const TournamentsStack = createStackNavigator(
   {
-    Tournaments: Tournaments
+    Tournaments: {
+      screen: Tournaments,
+      navigationOptions: {
+        title: "Tournaments"
+      }
+    }
   },
   {
     initialRouteName: "Tournaments",
@@ -49,7 +68,12 @@ const TournamentsStack = createStackNavigator(
 
 const AvatarStack = createStackNavigator(
   {
-    Avatar: Avatar
+    Avatar: {
+      screen: Avatar,
+      navigationOptions: {
+        title: "Avatar"
+      }
+    }
   },
   {
     initialRouteName: "Avatar",

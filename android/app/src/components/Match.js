@@ -73,7 +73,7 @@ class Match extends React.Component {
       <View style={styles.matches}>
         <View style={styles.match}>
           <TouchableNativeFeedback
-            onPress={() => this.props.navigation.navigate('MatchesDetail')}
+            onPress={() => this.props.navigation.navigate('MatchDetail')}
           >
             <View style={styles.matchup}>
               <View style={styles.half}>
