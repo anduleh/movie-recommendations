@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, ScrollView, StyleSheet, SectionList, TouchableOpacity } from "react-native";
 import { StackNavigator } from "react-navigation";
 import { Button, List, ListItem } from "react-native-elements";
-import Match from "../components/Match";
+import Match from "../components/Match/Match";
 
 const styles = StyleSheet.create({
     container: {
