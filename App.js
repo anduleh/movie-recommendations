@@ -10,12 +10,14 @@ import Matches from "./android/app/src/screens/Matches";
 import Tournaments from "./android/app/src/screens/Tournaments";
 import MatchDetail from "./android/app/src/screens/MatchDetail";
 
+import getSlideFromRightTransition from 'react-navigation-slide-from-right-transition';
+
 const MatchesStack = createStackNavigator(
   {
     Matches: {
       screen: Matches,
       navigationOptions: {
-        title: "Matches"
+        title: "Matches",
       }
     },
     MatchDetail: {
@@ -27,6 +29,7 @@ const MatchesStack = createStackNavigator(
   },
 
   {
+    transitionConfig: getSlideFromRightTransition,
     initialRouteName: "Matches",
     defaultNavigationOptions: {
       headerStyle: {
