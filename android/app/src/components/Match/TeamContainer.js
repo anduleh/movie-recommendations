@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, TouchableNativeFeedback } from "react-native";
+import { Text, View, StyleSheet, TouchableNativeFeedback } from "react-native";
 import { withNavigation } from "react-navigation";
 import Team from "./Team";
 

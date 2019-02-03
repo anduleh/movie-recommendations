@@ -7,14 +7,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#dad7d7",
     fontSize: 15,
     padding: 5,
-    color: "black"
+    color: "black",
+    marginBottom: 10
+  },
+  sectionList: {
+    backgroundColor: "purple"
   }
 });
 
 class MatchesScreen extends React.Component {
   render() {
     return (
-        <SectionList
+        <SectionList style={styles.sectionList}
           sections={[
             {
               title: "January 31, 2019",

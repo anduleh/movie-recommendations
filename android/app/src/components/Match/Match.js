@@ -6,7 +6,12 @@ import BetContainer from "./BetContainer";
 const styles = StyleSheet.create({
   match: {
     flexDirection: "row",
-    height: 65
+    height: 65,
+    borderRadius: 2,
+    marginBottom: 10, 
+    marginHorizontal: 10, 
+    overflow: "hidden",
+    backgroundColor: "#dad7d7",
   }
 });
 

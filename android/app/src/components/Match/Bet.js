@@ -6,6 +6,7 @@ import {
   StyleSheet,
   TouchableNativeFeedback
 } from "react-native";
+import { Button } from "react-native-elements";
 
 const styles = StyleSheet.create({
   half: {
@@ -18,7 +19,10 @@ const styles = StyleSheet.create({
   },
   betButton: {
     flex: 1,
-    backgroundColor: "purple"
+    backgroundColor: "#dad7d7",
+    borderColor: "white",
+    borderWidth: 1,
+    borderColor: "white"
   },
   betText: {
     color: "white"

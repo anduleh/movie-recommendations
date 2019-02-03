@@ -40,7 +40,7 @@ class Team extends React.Component {
           }}
         />
         <View style={styles.overlayText}>
-          <Text style={styles.teamText}>CLG</Text>
+          <Text style={styles.teamText}>TSM</Text>
         </View>
       </View>
     );

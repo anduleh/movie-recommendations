@@ -5,7 +5,12 @@ import Bet from "./Bet";
 const styles = StyleSheet.create({
   betContainer: {
     flexDirection: "row",
-    flex: 0.35
+    flex: 0.35,
+    marginVertical: 5,
+    marginHorizontal: 5,
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: "white"
   }
 });
 
