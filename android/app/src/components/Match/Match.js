@@ -6,7 +6,7 @@ import BetContainer from "./BetContainer";
 const styles = StyleSheet.create({
   match: {
     flexDirection: "row",
-    flex: 0.125
+    height: 65
   }
 });
 
@@ -18,7 +18,7 @@ class Match extends React.Component {
   render() {
     return (
       <View style={styles.match}>
-        <TeamContainer />
+        <TeamContainer match={this.props.match}/>
         <BetContainer />
       </View>
     );

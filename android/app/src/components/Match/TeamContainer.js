@@ -11,10 +11,14 @@ const styles = StyleSheet.create({
 });
 
 class TeamContainer extends React.Component {
+  matchDetails = param => {
+    this.props.navigation.navigate("MatchDetail", param);
+  };
+
   render() {
     return (
       <TouchableNativeFeedback
-        onPress={() => this.props.navigation.navigate("MatchDetail")}
+         onPress={() => this.matchDetails(this.props.match)}
       >
         <View style={styles.teamContainer}>
           <Team />
