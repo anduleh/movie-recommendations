@@ -1,18 +1,18 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-class Tournaments extends React.Component {
+class MatchesDetail extends React.Component {
   static navigationOptions = {
-    title: "Tournaments"
+    title: "MatchesDetail"
   };
 
   render() {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Tournaments!</Text>
+        <Text>MatchesDetail!</Text>
       </View>
     );
   }
 }
 
-export default Tournaments;
+export default MatchesDetail;

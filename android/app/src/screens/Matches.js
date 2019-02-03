@@ -1,18 +1,16 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import Match from "../components/Match";
 
 class MatchesScreen extends React.Component {
-    static navigationOptions = {
-      title: 'Matches'
-    };
-  
-    render() {
-      return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text>Matches!</Text>
-        </View>
-      );
-    }
+  static navigationOptions = {
+    title: "Matches"
+  };
+
+  render() {
+    return (
+      <Match></Match>
+    );
   }
+}
 
 export default MatchesScreen;
