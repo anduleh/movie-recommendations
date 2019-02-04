@@ -2,20 +2,25 @@ import React from "react";
 import {
   createStackNavigator,
   createBottomTabNavigator,
-  createAppContainer
+  createAppContainer,
+
 } from "react-navigation";
 import { Icon } from "react-native-elements";
 import Avatar from "./android/app/src/screens/Avatar";
 import Matches from "./android/app/src/screens/Matches";
+import Tabs from "./android/app/src/screens/Tabs";
 import Tournaments from "./android/app/src/screens/Tournaments";
 import MatchDetail from "./android/app/src/screens/MatchDetail";
 
 import getSlideFromRightTransition from 'react-navigation-slide-from-right-transition';
 
+
+
+
 const MatchesStack = createStackNavigator(
   {
     Matches: {
-      screen: Matches,
+      screen: Tabs,
       navigationOptions: {
         title: "Matches",
       }

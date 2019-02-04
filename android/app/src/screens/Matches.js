@@ -35,26 +35,6 @@ class MatchesScreen extends React.Component {
             {
               title: "February 3, 2019",
               data: ["TL vs TSM", "CLG vs FOX", "GGS vs TSM"]
-            },
-            {
-              title: "February 4, 2019",
-              data: ["OPT vs TL", "CLG vs C9", "FOX vs GGS"]
-            },
-            {
-              title: "February 6, 2019",
-              data: ["GGS vs CLG", "OPT vs 100", "CG vs FLY"]
-            },
-            {
-              title: "February 7, 2019",
-              data: ["CG vs TSM", "FLY vs FOX", "CLG vs FLY"]
-            },
-            {
-              title: "February 8, 2019",
-              data: ["TL vs TSM", "CLG vs FOX", "GGS vs TSM"]
-            },
-            {
-              title: "February 9, 2019",
-              data: ["OPT vs TL", "CLG vs C9", "FOX vs GGS"]
             }
           ]}
           renderSectionHeader={({ section }) => (
