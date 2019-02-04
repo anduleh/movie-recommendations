@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableNativeFeedback } from "react-native";
+import { View, StyleSheet, TouchableNativeFeedback } from "react-native";
 import { withNavigation } from "react-navigation";
 import { Icon } from 'react-native-elements';
 
 const styles = StyleSheet.create({
   button: {
     flexDirection: "row",
-    paddingRight: 16
+    marginRight: 16
   }
 });
 
