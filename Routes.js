@@ -14,7 +14,7 @@ import Matches from "./android/app/src/screens/Matches";
 import MatchDetail from "./android/app/src/screens/MatchDetail";
 import getSlideFromRightTransition from "react-navigation-slide-from-right-transition";
 import SettingsButton from "./android/app/src/components/Header/SettingsButton";
-import Settings from "./android/app/src/components/Drawer/Settings";
+import Settings from "./android/app/src/components/Drawer/Settings/Settings";
 import BetSlip from "./android/app/src/components/Drawer/BetSlip";
 import RightHeader from "./android/app/src/components/Header/RightHeader";
 
@@ -62,7 +62,7 @@ const MatchesStack = createStackNavigator(
       navigationOptions: {
         title: "Matches",
         headerLeft: <SettingsButton />,
-        headerRight: <RightHeader />,
+        headerRight: <RightHeader />
       }
     },
     MatchDetail: {
