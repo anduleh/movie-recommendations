@@ -15,8 +15,9 @@ import MatchDetail from "./android/app/src/screens/MatchDetail";
 import getSlideFromRightTransition from "react-navigation-slide-from-right-transition";
 import SettingsButton from "./android/app/src/components/Header/SettingsButton";
 import Settings from "./android/app/src/components/Drawer/Settings/Settings";
-import BetSlip from "./android/app/src/components/Drawer/BetSlip";
+import BetSlip from "./android/app/src/components/Drawer/BetSlip/BetSlip";
 import RightHeader from "./android/app/src/components/Header/RightHeader";
+import Match from "./android/app/src/components/Match/Match";
 
 const HomeTab = createMaterialTopTabNavigator(
   {
